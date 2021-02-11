@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.*;
 public class BubbleSort {
-	static void bubbleSort(int[] arr){ 				// Sorting given array arr 
+	static void bubbleSort(int[] arr){ 				
         int n = arr.length;  
         int temp = 0;  
          for(int i=0; i<n; i++)
@@ -21,30 +21,28 @@ public class BubbleSort {
 		Scanner input=new Scanner(System.in);
 		
 		System.out.println("Enter the size of array");		
-		int N=input.nextInt();								// asking the size of the array
-		
+		int N=input.nextInt();										
 		System.out.println("Enter the values in array");		
-		int arr[]=new int[N];								// Getting the input of the array
-		
+		int arr[]=new int[N];							
 		for(int i=0; i<N; i++) 
 		{
-			arr[i]=input.nextInt();							// Loop for multiple inputs
+			arr[i]=input.nextInt();							
 		}
 		
 		System.out.println("Array Before Bubble Sort");  
         for(int i=0; i < arr.length; i++)
         {  
-                System.out.print(arr[i] + " ");				// printing unsorted array
+                System.out.print(arr[i] + " ");				
         }
         
-        System.out.println();  								// Line Break
+        System.out.println();  								
         
-        bubbleSort(arr);									// Sorting array
+        bubbleSort(arr);								
         System.out.println("Array After Bubble Sort");
         
         for(int i=0; i < arr.length; i++)
         {  
-                System.out.print(arr[i] + " ");				// Printing the sorted array
+                System.out.print(arr[i] + " ");				
         }  
 	}  
 }
