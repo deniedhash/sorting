@@ -12,6 +12,7 @@ public class NewSort {
                 if (arr[j] < arr[index])
                 {  
                     index = j;
+                    
                 }  
             }  
             int smallerNumber = arr[index];   
